@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins',sans-serif;
+        }
+        body {
+            background-color: #000;
+            color: #fff;
+            margin: 6px;
+            display: flex;
+            width: 1480px;
+        }
+        .sidebar_1 {
+            width: 340px;
+            height: 150px;
+            background-color: #111111;
+        }
+        .sidebar_1 i{
+           margin-right: 12px;
+        }
+        .sidebar_1 a {
+            color: #fff;
+            text-decoration: none;
+            padding: 13px;
+        }
+        .sidebar_1 p {
+            margin-left: 29px;
+            font-size: 17px;
+            font-weight: 600;
+        }
+        .sidebar_1 {
+            border: 2px solid #111111;
+            border-radius: 18px;
+        }
+        .sidebar_2{
+            width: 340px;
+            height: 550px;
+            background-color: #111111;
+            position: relative;
+            margin-top: 14px;
+            border: 2px solid #111111;
+            border-radius: 18px;
+        }
+        .sidebar i {
+            margin-right: 7px;
+        }
+        .sidebar p{
+            font-size: 17px;
+            font-weight: 600;
+            margin-left: 29px;
+            position: relative;
+            top: 8px;
+        }
+        .sidebar span {
+            margin-left: 140px ;
+            font-size: 20px;
+        }
+        .sidebar a {
+            text-decoration: none;
+            color: #b0b0b0;
+        }
+        .sidebar a:hover {
+            color: #fff;
+            transition: .44s;
+        }
+        .content_1 .des {
+            float: right;
+            position: relative;
+            right: 198px;
+        }
+        .contents{
+            margin-top: 20px;
+            
+        }
+        .content_1 span {
+            position: relative;
+            top: 8px;
+            color: #b0b0b0;
+            font-size: 15px;
+        }
+        .content_2 {
+            position: relative;
+            top: 15px;
+        }
+        .content_2 .des {
+            float: right;
+            position: relative;
+            right: 212px;
+        }
+        .content_2 span {
+            position: relative;
+            top: 9px;
+            color: #b0b0b0;
+        }
+        .content_1:hover{
+            border: 2px solid #3d3d3d;
+            background-color: #3d3d3d;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .content_2:hover{
+            border: 2px solid #3d3d3d;
+            background-color: #3d3d3d;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .main_content {
+            background-color: #1c1b1b;
+            height: auto;
+            border: 1px solid #111111;
+            border-radius: 12px;
+            margin-left: 12px;
+            width: 1200px;
+        }
+        header nav {
+            border: 1px solid #c05866;
+            background: linear-gradient(to bottom left,#c05866,#80464e);
+        }
+        .sign a {
+            text-decoration: none;
+            color: #b0b0b0;
+            margin-right: 19px;
+            font-size: 14px;
+        }
+        nav {
+            display: flex;
+            padding: 20px;
+            height:300px;
+        }
+        .sign {
+            position: relative;
+            left: 879px;
+            display: flex;
+        }
+        .sign button {
+            padding: 12px 18px 24px 18px;
+            border: 1px solid #fff;
+            border-radius: 19px;
+            position: relative;
+            bottom: 8px;
+            color: #000;
+            font-size: 14px;
+            height: 20px;
+
+        }
+        .sign button:hover{
+            font-size: 16px;
+            padding: 14px 20px 26px 20px;
+        }:hover{
+            color: #fff;
+            font-size: 18px;
+        }
+        .buttons i {
+            font-size: 21px;
+            color: #3d3d3d;
+        }
+        .buttons i:hover{
+            cursor: pointer;
+            color: #fff;
+        }   
+        .details {
+            position: relative;
+            bottom: 250px;
+            left: 10px;
+            margin: 12px;
+            display: flex;
+        }
+        .details img{
+            border-radius: 50%;
+        }
+        .ver i {
+            background-color: blue;
+            border-radius: 50%;
+        }
+        .ver {
+            position: relative;
+            top:31px;
+            left: 20px;
+        }
+        .ver p {
+            margin: 13px;        
+        }
+        .ver h1 {
+        font-weight: 700;
+        font-size: 47px;
+        }
+        .tools li {
+            list-style-type: none;
+        }
+        .plyy i{
+            border-radius: 50%;
+            background-color: rgb(145, 241, 0);
+            padding: 8px;
+        }
+        .tools ul li{
+            font-size: 25px;
+            margin: 18px;
+        }
+        ul {
+            display: flex;
+            padding: 20px;
+        }
+        .tools {
+            position: relative;
+            bottom: 250px;      
+        }
+        .tools ul li p {
+            border: 1px solid #fff;
+            border-radius: 18px;
+            padding: 4px 12px 4px 12px;
+        }
+        .tools ul li:hover {
+           cursor: pointer;
+        }
+        .popu {
+            position: relative;
+            bottom: 260px;
+            left: 40px;
+        }
+        .popu p:hover {
+            text-decoration: underline;
+        }
+        .popu p{
+            font-size: 21px;
+            font-weight: 700;
+        }
+        .songs {
+            position: relative;
+            bottom: 230px;
+            left: 48px;
+        }
+        .first_song {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            position: relative;
+            right: 125px;
+            width: auto;
+            margin: 12px;
+        }
+        .first_song:hover {
+            transform: scale(0.9);
+        }
+        .ff {
+            display: flex;
+        }
+        .ff p{
+            margin: 8px;
+            position: relative;
+            left: 10px;
+        }
+        .monthly p{
+            font-size: 15px;
+        }
+        .minutes p {
+            font-size: 15px;
+        }
+        audio {
+            height: 50px;
+            width: 290px;
+        }
+
+    </style>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="sidebarr">
+        <div class="sidebar_1">
+            <img src="Spotify logo.png" alt="logo">
+            <a href="#"><p><i class='bx bxs-home'></i>Home</p></a>
+            <a href="#"><p><i class='bx bx-search' ></i>Search</p></a>
+        </div>
+        <div class="sidebar_2">
+            <div class="sidebar">
+                <a href="#"> <p><i class='bx bx-library' ></i> Your Library <span><i class='bx bx-plus'></i></span></p></a>
+             </div>
+             <div class="contents">
+                <div class="content_1">
+                    <img src="ABOOGIE.jpeg" width="50px" height="50px" alt="moody">
+                <p class="des">Moody Mix<br><span>Spotify</span></p>
+                </div>
+                <div class="content_2">
+                    <img src="Roddy Ricch (Rapper) - Please Excuse Me for Being Antisocial [Album Cover] _ One Eye Symbolism.jpeg" width="50px" height="50px" alt="moody">
+                <p class="des">Pop Mix<br><span>Spotify</span></p>
+                </div>
+                
+             </div>
+        </div>
+    </div>
+    <div class="main_content">
+        <header>
+            <nav>
+                <div class="buttons">
+                    <i class='bx bx-arrow-back'></i>
+                    <i class='bx bx-right-arrow-alt' ></i> 
+                </div>
+                <div class="sign">
+                    <a href="#"><h3>Sign Up</h3></a>
+                    <button>Log In</button>
+                </div>
+            </nav>
+           
+            <div class="details">
+                <div class="img">
+                    <img src="king promise.jpg" alt="promise" width="200px" height="200px">
+                </div>
+                <div class="ver">
+                    <p><i class='bx bx-check'></i> Verified Artist</p>
+                <h1>King Promise</h1>
+                <p>2,540,122 monthly listeners</p>
+                </div>
+            </div>
+        </header>
+        <div class="tools">
+            <ul>
+                <li class="plyy"><i class='bx bx-play' ></i></li>
+                <li><p>follow</p></li>
+                <li><i class='bx bx-dots-horizontal-rounded' ></i></li>
+            </ul>
+        </div>
+        <div class="popu">
+            <p>Popular</p>
+        </div>
+        <div class="songs">
+            <div class="first_song">
+                <div class="ff">
+                    <img src="king promise.jpg" width=" 38px" height="38px" alt="asake">
+                    <p> Terminator</p>
+                </div>
+                <div class="controls">
+                    <audio controls autoplay muted>
+                        <source src="King Promise - Terminator.mp3" type="audio/ogg">
+                        <source src="King Promise - Terminator.mp3" type="audio/mpeg">
+                      Your browser does not support the audio element.
+                      </audio>
+                </div>
+                <div class="monthly">
+                    <p>1,729,004</p>
+                </div>
+                <div class="minutes">
+                    <p>2:51</p>
+                </div>
+            </div>
+            <div class="first_song">
+                <div class="ff">
+                    <img src="king promise_paris.jpeg" width=" 38px" height="38px" alt="asake">
+                    <p>Paris </p>
+                </div>
+                <div class="controls">
+                    <audio controls autoplay muted>
+                        <source src="01 - King Promise - Paris.mp3" type="audio/ogg">
+                        <source src="01 - King Promise - Paris.mp3" type="audio/mpeg">
+                      Your browser does not support the audio element.
+                      </audio>
+                </div>
+                <div class="monthly">
+                    <p>43,632,740</p>
+                </div>
+                <div class="minutes">
+                    <p>3:05</p>
+                </div>
+            </div>
+            <div class="first_song">
+                <div class="ff">
+                    <img src="king promise.jpg" width=" 38px" height="38px" alt="asake">
+                    <p> Wotowoto</p>
+                </div>
+                <div class="controls">
+                    <audio controls autoplay muted>
+                        <source src="King_Promise_-_Perfect_Combi_Ft._Gabzy_www.hitxgh.com_ _=1.mp3" type="audio/ogg">
+                        <source src="King_Promise_-_Perfect_Combi_Ft._Gabzy_www.hitxgh.com_ _=1.mp3" type="audio/mpeg">
+                      Your browser does not support the audio element.
+                      </audio>
+                </div>
+                <div class="monthly">
+                    <p>8,882,487</p>
+                </div>
+                <div class="minutes">
+                    <p>3:39</p>
+                </div>
+            </div>  <div class="first_song">
+                <div class="ff">
+                    <img src="true 2 myself.jpg" width=" 38px" height="38px" alt="asake">
+                    <p> Oil In My Head</p>
+                </div>
+                <div class="controls">
+                    <audio controls autoplay muted>
+                        <source src="King-Promise-Ft-Sarkodie-Olivetheboy-Favorite-Story.mp3" type="audio/ogg">
+                        <source src="King-Promise-Ft-Sarkodie-Olivetheboy-Favorite-Story.mp3" type="audio/mpeg">
+                      Your browser does not support the audio element.
+                      </audio>
+                </div>
+                <div class="monthly">
+                    <p>130,144,515</p>
+                </div>
+                <div class="minutes">
+                    <p>2:58</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    
+</body>
+</html>

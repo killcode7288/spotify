@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins',sans-serif;
+        }
+        body {
+            background-color: #000;
+            color: #fff;
+            margin: 6px;
+            display: flex;
+            width: 1469px;
+        }
+        .sidebar_1 {
+            width: 340px;
+            height: 150px;
+            background-color: #111111;
+        }
+        .sidebar_1 i{
+           margin-right: 12px;
+        }
+        .sidebar_1 a {
+            color: #fff;
+            text-decoration: none;
+            padding: 13px;
+        }
+        .sidebar_1 p {
+            margin-left: 29px;
+            font-size: 17px;
+            font-weight: 600;
+        }
+        .sidebar_1 {
+            border: 2px solid #111111;
+            border-radius: 18px;
+        }
+        .sidebar_2{
+            width: 340px;
+            height: 550px;
+            background-color: #111111;
+            position: relative;
+            margin-top: 14px;
+            border: 2px solid #111111;
+            border-radius: 18px;
+        }
+        .sidebar i {
+            margin-right: 7px;
+        }
+        .sidebar p{
+            font-size: 17px;
+            font-weight: 600;
+            margin-left: 29px;
+            position: relative;
+            top: 8px;
+        }
+        .sidebar span {
+            margin-left: 140px ;
+            font-size: 20px;
+        }
+        .sidebar a {
+            text-decoration: none;
+            color: #b0b0b0;
+        }
+        .sidebar a:hover {
+            color: #fff;
+            transition: .44s;
+        }
+        .content_1 .des {
+            float: right;
+            position: relative;
+            right: 198px;
+        }
+        .contents{
+            margin-top: 20px;
+            
+        }
+        .content_1 span {
+            position: relative;
+            top: 8px;
+            color: #b0b0b0;
+            font-size: 15px;
+        }
+        .content_2 {
+            position: relative;
+            top: 15px;
+        }
+        .content_2 .des {
+            float: right;
+            position: relative;
+            right: 212px;
+        }
+        .content_2 span {
+            position: relative;
+            top: 9px;
+            color: #b0b0b0;
+        }
+        .content_1:hover{
+            border: 2px solid #3d3d3d;
+            background-color: #3d3d3d;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .content_2:hover{
+            border: 2px solid #3d3d3d;
+            background-color: #3d3d3d;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .main_content {
+            background-color: #1c1b1b;
+            width: 100%;
+            height: auto;
+            border: 1px solid #111111;
+            border-radius: 12px;
+            margin-left: 12px;
+        }
+        header>nav {
+            border: 1px solid #111111;
+            height:58px;
+            background: #111111;
+        }
+        .sign a {
+            text-decoration: none;
+            color: #b0b0b0;
+            margin-right: 19px;
+            font-size: 14px;
+        }
+        nav {
+            display: flex;
+            padding: 20px;
+        }
+        .sign {
+            position: relative;
+            left: 880px;
+            display: flex;
+        }
+        .sign button {
+            padding: 12px 18px 24px 18px;
+            border: 1px solid #fff;
+            border-radius: 19px;
+            position: relative;
+            bottom: 8px;
+            color: #000;
+            font-size: 14px;
+
+        }
+        .sign button:hover{
+            font-size: 16px;
+            padding: 14px 20px 26px 20px;
+        }:hover{
+            color: #fff;
+            font-size: 18px;
+        }
+        .buttons i {
+            font-size: 21px;
+            color: #3d3d3d;
+        }
+        .buttons i:hover{
+            cursor: pointer;
+            color: #fff;
+        }
+        .pop p {
+            margin-left: 18px;
+            position: relative;
+            top: 31px;
+            font-size: 19px;
+            font-weight: 700;
+        }
+        .pop p:hover{
+            text-decoration: underline;
+        }
+        .pop h5 {
+            position: relative;
+            left: 1020px;
+            top: 22px;
+            color: #3d3d3d;
+        }
+        .first_artist img{
+            border-radius: 50%;
+            position: relative;
+            top: 12px;
+            right: 20px;
+            bottom: 30px;
+        }
+        .artists {
+            position: relative;
+            top: 43px;
+            left: 5px;
+            display: flex;
+        }
+        .first_artist p{
+            position: relative;
+            top: 15px;
+            left: 20px;
+        }
+        .first_artist span {
+            color: #b0b0b0;
+        }
+        .first_artist:hover{
+            border: 2px solid #111111;
+            width: 180px;
+            height: 230px;
+            background-color: #111111;
+            border-radius: 15px;
+        }
+        .first_artist{
+            padding: 36px;
+        }
+        .alb p{
+            position: relative;
+            top: 90px;
+            left: 20px;
+            font-size: 19px;
+            font-weight: 700;
+        }
+        .alb p:hover {
+            text-decoration: underline;
+        }
+        .first_album {
+            position: relative;
+            top: 100px;
+            margin: 8px;
+        }
+        .first_album span {
+            color: #b0b0b0;
+            font-size: 14px;
+        }
+        .albums {
+            position: relative;
+            top: 13px;
+            left: 12px;
+            display: flex;
+        }
+        .first_album img:hover{
+            transform: scale(0.9);
+        }
+
+
+    </style>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ALL MEDIA ELEMENTS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+</head>
+<body>
+    <div class="sidebarr">
+        <div class="sidebar_1">
+            <img src="Spotify logo.png" alt="logo">
+            <a href="#"><p><i class='bx bxs-home'></i>Home</p></a>
+            <a href="#"><p><i class='bx bx-search' ></i>Search</p></a>
+        </div>
+        <div class="sidebar_2">
+            <div class="sidebar">
+                <a href="#"> <p><i class='bx bx-library' ></i> Your Library <span><i class='bx bx-plus'></i></span></p></a>
+             </div>
+             <div class="contents">
+                <div class="content_1">
+                    <img src="ABOOGIE.jpeg" width="50px" height="50px" alt="moody">
+                <p class="des">Moody Mix<br><span>Spotify</span></p>
+                </div>
+                <div class="content_2">
+                    <img src="Roddy Ricch (Rapper) - Please Excuse Me for Being Antisocial [Album Cover] _ One Eye Symbolism.jpeg" width="50px" height="50px" alt="moody">
+                <p class="des">Pop Mix<br><span>Spotify</span></p>
+                </div>
+                
+             </div>
+        </div>
+    </div>
+    <div class="main_content">
+        <header>
+            <nav>
+                <div class="buttons">
+                    <i class='bx bx-arrow-back'></i>
+                    <i class='bx bx-right-arrow-alt' ></i> 
+                </div>
+                <div class="sign">
+                    <a href="#"><h3>Sign Up</h3></a>
+                    <button>Log In</button>
+                </div>
+            </nav>
+        </header>
+        <div class="pop">
+            <p>Popular Artists</p>
+            <h5>Show all</h5>
+        </div>
+        <div class="artists">
+            <div class="first_artist">
+                <a href="Davido's page.html"><img src="davido.jpeg" alt="Davido" width="135" height="135"></a>
+                <p> Davido<br><span>Artist</span></p>
+            </div>
+            <div class="first_artist">
+                <a href="Black Sherif.html"><img src="black sheriff.jpeg" alt="Black Sheriff" width="135" height="135"></a>
+                <p> Black Sheriff<br><span>Artist</span></p>
+            </div>
+            <div class="first_artist">
+                <a href="king promise.html"><img src="king promise.jpg" alt="King Promise" width="135" height="135"></a>
+                <p> King Promise<br><span>Artist</span></p>
+            </div>
+            <div class="first_artist">
+                <a href="#"><img src="sark.jpg" alt="Sarkodie" width="135" height="135"></a>
+                <p> Sarkodie<br><span>Artist</span></p>
+            </div>
+            <div class="first_artist">
+                <a href="Asake page.html"><img src="asake.jpg" alt="Asake" width="135" height="135"></a>
+                <p> Asake<br><span>Artist</span></p>
+            </div>
+        </div>
+        <div class="alb">
+            <p>Popular Album</p>
+        </div>
+        <div class="albums">
+            <div class="first_album">
+                <a href="#"><img src="black sheriff_album.jpg" width="160px" height="155px"></a>
+                <div class="al_name">
+                    <p>The Villian I Never <br>Was <br><span>Black Sherif</span></p>
+                </div>
+            </div>
+            <div class="first_album">
+                <a href="#"><img src="rema_album.jpg" width="160px" height="155px"></a>
+                <div class="al_name">
+                    <p>HeIs<br><span>Rema</span></p>
+                </div>
+            </div>
+            <div class="first_album">
+                <a href="#"><img src="asake_album.jpg" width="160px" height="155px"></a>
+                <div class="al_name">
+                    <p>Lungu Boy<br><span>Asake</span></p>
+                </div>
+            </div>
+            <div class="first_album">
+                <a href="#"><img src="kweku.jpg" width="160px" height="155px"></a>
+                <div class="al_name">
+                    <p>Kweku Jesus<br><span>Kweku Smoke</span></p>
+                </div>
+            </div>
+            <div class="first_album">
+                <a href="#"><img src="kidi.jpg" width="160px" height="155px"></a>
+                <div class="al_name">
+                    <p>Lomo Lomo<br><span>Kidi</span></p>
+                </div>
+            </div>
+            <div class="first_album">
+                <a href="#"><img src="timeless.jpg" width="160px" height="155px"></a>
+                <div class="al_name">
+                    <p>Timeless<br><span>Davido</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+   
+    
+    
+</body>
+</html>
